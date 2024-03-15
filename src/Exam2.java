@@ -2,6 +2,9 @@ public class Exam2 {
     public  static void makeStar(int high){
         int num = 1;
         for(int i = 1; i <= high; i++){
+            for(int b = 1; b <= high -i ; b++){
+                System.out.print(" ");
+            }
             for(int j= 1; j <= num; j++){
                 System.out.print("*");
             }
@@ -10,11 +13,11 @@ public class Exam2 {
         }
     }
     public static void main(String[] args) {
-        makeStar(3);
-        makeStar(5);
-        makeStar(7);
+
+
 
         // 높이 : 3
+        makeStar(3);
 
         /*
 
@@ -27,6 +30,7 @@ public class Exam2 {
         // 높이 : 5
 
         // 출력
+        makeStar(5);
 
         /*
 
@@ -41,7 +45,7 @@ public class Exam2 {
         // 높이 : 7
 
         // 출력
-
+        makeStar(7);
         /*
 
          *
